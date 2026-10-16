@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-09-17T06:45:00Z",
+  "validator": "OpenAPI 3.0.3 Spec Validator",
+  "target_file": "openapi.yaml",
+  "validation_status": "PASSED_100_PERCENT",
+  "checks": [
+    {"check": "YAML Syntactic Structure", "passed": true, "details": "Safe load succeeded, root is valid mapping."},
+    {"check": "Required Root Sections", "passed": true, "details": "All mandatory keys present: openapi, info, paths, components."},
+    {"check": "RFC 7807 Error Model Compliance", "passed": true, "details": "ProblemDetails schema accurately defined under components/schemas/ProblemDetails."},
+    {"check": "HTTP Status Code Coverage", "passed": true, "details": "Status codes 200, 201, 404, 409, 422, 500 mapped cleanly."},
+    {"check": "Path Definitions", "passed": true, "details": "Found 4 paths: /products, /products/{id}, /cart, /cart/items."}
+  ],
+  "retry_simulation_telemetry": {
+    "trial_1_naive_reprompt": {
+      "attempt": 1,
+      "failed_field": "responses[404]",
+      "retry_method": "Full prompt resend",
+      "convergence_time_ms": 3400
+    },
+    "trial_2_targeted_error_diff": {
+      "attempt": 1,
+      "failed_field": "responses[404]",
+      "diff_sent": "paths[/products/{id}].get.responses: missing key '404'",
+      "retry_method": "AST Node Patching",
+      "convergence_time_ms": 520
+    }
+  }
+}

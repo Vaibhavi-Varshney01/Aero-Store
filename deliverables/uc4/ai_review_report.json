@@ -1,0 +1,15 @@
+{
+  "security_issues": [
+    "Line 4: Potential Hardcoded Secret / API Key detected (API_KEY = 'sk-live-9921448201948291048201').",
+    "Line 24: Reference to non-existent / deprecated API signature '/api/orders/place_now' (diverges from contract /api/v1/orders).",
+    "Line 9: Parameters ['cart', 'user_id', 'coupon', 'payment_info'] accessed without defensive None/empty validation."
+  ],
+  "complexity_score": "B (Cyclomatic Complexity: 7, nested depth: 6)",
+  "refactor_suggestions": [
+    "Extract nested if-branching into early return guard clauses to reduce cyclomatic complexity.",
+    "Remove hardcoded API_KEY from source; ingest via environment variables (os.getenv('API_KEY')).",
+    "Replace hallucinated endpoint '/api/orders/place_now' with standard contract '/api/v1/orders'.",
+    "Add defensive type hints and Pydantic validation models for input parameters."
+  ],
+  "risk_level": "HIGH"
+}

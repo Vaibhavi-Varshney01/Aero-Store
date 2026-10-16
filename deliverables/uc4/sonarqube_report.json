@@ -1,0 +1,40 @@
+{
+  "scanner": "SonarQube Community Static Analysis Engine (Python AST)",
+  "project_key": "ecommerce_platform:order_service",
+  "status": "FAILED_QUALITY_GATE",
+  "metrics": {
+    "bugs": 2,
+    "vulnerabilities": 1,
+    "security_hotspots": 1,
+    "code_smells": 4,
+    "cyclomatic_complexity": 12,
+    "cognitive_complexity": 16,
+    "technical_debt": "45min"
+  },
+  "rules_violated": [
+    {
+      "rule_id": "python:S2068",
+      "severity": "BLOCKER",
+      "type": "VULNERABILITY",
+      "message": "Hard-coded credentials are security-sensitive. Move 'sk-live-9921448201948291048201' to external secret manager."
+    },
+    {
+      "rule_id": "python:S3776",
+      "severity": "CRITICAL",
+      "type": "CODE_SMELL",
+      "message": "Cognitive Complexity of 'process_order' is 16, which exceeds the authorized limit of 15."
+    },
+    {
+      "rule_id": "python:S5727",
+      "severity": "MAJOR",
+      "type": "BUG",
+      "message": "Missing null/None check before evaluating 'len(cart.items)'."
+    }
+  ],
+  "license_governance": {
+    "total_dependencies": 10,
+    "approved_commercial_licenses": ["MIT", "BSD-3-Clause", "Apache-2.0"],
+    "flagged_copyleft_licenses": ["gpl-crypto-lib (GPL-3.0 - REJECTED)"],
+    "compliance_status": "ACTION_REQUIRED"
+  }
+}

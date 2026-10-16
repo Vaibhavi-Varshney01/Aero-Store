@@ -1,0 +1,316 @@
+[
+  {
+    "chunk_id": "POL-001",
+    "doc_id": "POL-001",
+    "title": "AeroStore 30-Day Return & Refund Policy",
+    "category": "Customer Support & Policies",
+    "filename": "AeroStore_30-Day_Return_&_Refund_Policy.txt",
+    "section_or_page": "Customer Support & Policies",
+    "content": "AeroStore 30-Day Return & Refund Policy\n\nAeroStore offers a 30-day risk-free return guarantee on all physical products purchased from our storefront. To be eligible for a full refund, items must be in their original packaging, with all accessories, cables, and documentation included. Customers can initiate an RMA (Return Merchandise Authorization) via the portal or customer service. Once received at our fulfillment hub, refunds are credited to the original payment method within 3 to 5 business days. Return shipping is completely free for damaged or defective units.",
+    "chunk_index": 0,
+    "snippet": "AeroStore 30-Day Return & Refund Policy\n\nAeroStore offers a 30-day risk-free return guarantee on all physical products purchased from our storefront. ...",
+    "metadata": {
+      "title": "AeroStore 30-Day Return & Refund Policy",
+      "tags": [
+        "returns",
+        "refunds",
+        "rma",
+        "30 days",
+        "money back",
+        "satisfaction"
+      ],
+      "category": "Customer Support & Policies"
+    },
+    "hash": "588b41739c10b170"
+  },
+  {
+    "chunk_id": "POL-002",
+    "doc_id": "POL-002",
+    "title": "AeroStore 2-Year Limited Hardware Warranty",
+    "category": "Customer Support & Policies",
+    "filename": "AeroStore_2-Year_Limited_Hardware_Warranty.txt",
+    "section_or_page": "Customer Support & Policies",
+    "content": "AeroStore 2-Year Limited Hardware Warranty\n\nAll electronic hardware devices (including HyperSound Headphones, Titan Pro Smartwatches, keyboards, and monitors) come with a comprehensive 2-Year Limited Manufacturer Warranty. This warranty covers internal component failures, manufacturing defects, battery degradation exceeding 20% within the first year, and display panel anomalies. The warranty does not cover accidental physical damage, unauthorized disassemblies, or immersion beyond certified IPX water ratings. Warranty claims are processed within 48 hours, providing expedited replacement units.",
+    "chunk_index": 0,
+    "snippet": "AeroStore 2-Year Limited Hardware Warranty\n\nAll electronic hardware devices (including HyperSound Headphones, Titan Pro Smartwatches, keyboards, and m...",
+    "metadata": {
+      "title": "AeroStore 2-Year Limited Hardware Warranty",
+      "tags": [
+        "warranty",
+        "repair",
+        "hardware",
+        "replacement",
+        "defects",
+        "guarantee"
+      ],
+      "category": "Customer Support & Policies"
+    },
+    "hash": "4d75e3933cf32ff9"
+  },
+  {
+    "chunk_id": "POL-003",
+    "doc_id": "POL-003",
+    "title": "Domestic & International Shipping Delivery SLAs",
+    "category": "Shipping & Logistics",
+    "filename": "Domestic_&_International_Shipping_Delivery_SLAs.txt",
+    "section_or_page": "Shipping & Logistics",
+    "content": "Domestic & International Shipping Delivery SLAs\n\nAeroStore operates high-velocity automated fulfillment hubs. Orders placed before 2:00 PM EST qualify for same-day dispatch. Standard Domestic Shipping is delivered within 2 business days via FedEx/UPS Express for a flat fee or free on orders above $75. Overnight Priority Shipping guarantees next-day delivery by 10:30 AM. International shipping is supported across 42 countries with all import customs duties and VAT prepaid at checkout (DDP terms).",
+    "chunk_index": 0,
+    "snippet": "Domestic & International Shipping Delivery SLAs\n\nAeroStore operates high-velocity automated fulfillment hubs. Orders placed before 2:00 PM EST qualify...",
+    "metadata": {
+      "title": "Domestic & International Shipping Delivery SLAs",
+      "tags": [
+        "shipping",
+        "delivery",
+        "sla",
+        "express",
+        "tracking",
+        "fedex",
+        "ups",
+        "international"
+      ],
+      "category": "Shipping & Logistics"
+    },
+    "hash": "2139768b35457c00"
+  },
+  {
+    "chunk_id": "PROD-SPEC-101",
+    "doc_id": "PROD-SPEC-101",
+    "title": "HyperSound ANC Wireless Headphones (PROD-101) Technical Manual",
+    "category": "Product Specifications",
+    "filename": "HyperSound_ANC_Wireless_Headphones_(PROD-101)_Technical_Manual.txt",
+    "section_or_page": "Product Specifications",
+    "content": "HyperSound ANC Wireless Headphones (PROD-101) Technical Manual\n\nHyperSound ANC Wireless Headphones (Model PROD-101) feature custom 40mm beryllium drivers delivering 20Hz - 40kHz Hi-Res Audio. Equipped with Hybrid Active Noise Cancellation (ANC) utilizing 6 external feed-forward and feed-back microphones, reducing ambient noise by up to 35dB. Battery life offers 40 continuous hours with ANC enabled, or 60 hours with ANC disabled. Fast-charging via USB-C provides 5 hours of playback from a 10-minute charge. Supports Bluetooth 5.3 with AAC, LDAC, and multipoint dual-device pairing.",
+    "chunk_index": 0,
+    "snippet": "HyperSound ANC Wireless Headphones (PROD-101) Technical Manual\n\nHyperSound ANC Wireless Headphones (Model PROD-101) feature custom 40mm beryllium driv...",
+    "metadata": {
+      "title": "HyperSound ANC Wireless Headphones (PROD-101) Technical Manual",
+      "tags": [
+        "headphones",
+        "hypersound",
+        "anc",
+        "noise cancellation",
+        "battery",
+        "bluetooth",
+        "audio"
+      ],
+      "category": "Product Specifications"
+    },
+    "hash": "da09d822b58f011c"
+  },
+  {
+    "chunk_id": "PROD-SPEC-102",
+    "doc_id": "PROD-SPEC-102",
+    "title": "Mechanical RGB Gaming Keyboard (PROD-102) Technical Specifications",
+    "category": "Product Specifications",
+    "filename": "Mechanical_RGB_Gaming_Keyboard_(PROD-102)_Technical_Specifications.txt",
+    "section_or_page": "Product Specifications",
+    "content": "Mechanical RGB Gaming Keyboard (PROD-102) Technical Specifications\n\nThe AeroStore Mechanical RGB Gaming Keyboard (Model PROD-102) is engineered for high-performance esports and coding. Features hot-swappable pre-lubricated linear Red mechanical switches (45g actuation force, 2.0mm pre-travel) rated for 80 million keystrokes. Includes per-key 16.8M color customizable RGB illumination with onboard memory profiles, 1000Hz polling rate, full N-Key Rollover (NKRO) anti-ghosting, and aircraft-grade anodized aluminum top plate with detachable braided USB-C cable.",
+    "chunk_index": 0,
+    "snippet": "Mechanical RGB Gaming Keyboard (PROD-102) Technical Specifications\n\nThe AeroStore Mechanical RGB Gaming Keyboard (Model PROD-102) is engineered for hi...",
+    "metadata": {
+      "title": "Mechanical RGB Gaming Keyboard (PROD-102) Technical Specifications",
+      "tags": [
+        "keyboard",
+        "mechanical",
+        "rgb",
+        "switches",
+        "gaming",
+        "hot-swap",
+        "anti-ghosting"
+      ],
+      "category": "Product Specifications"
+    },
+    "hash": "38215f1257f8a6c0"
+  },
+  {
+    "chunk_id": "PROD-SPEC-103",
+    "doc_id": "PROD-SPEC-103",
+    "title": "Ergonomic Vertical Wireless Mouse (PROD-103) Specifications",
+    "category": "Product Specifications",
+    "filename": "Ergonomic_Vertical_Wireless_Mouse_(PROD-103)_Specifications.txt",
+    "section_or_page": "Product Specifications",
+    "content": "Ergonomic Vertical Wireless Mouse (PROD-103) Specifications\n\nThe Ergonomic Vertical Wireless Mouse (Model PROD-103) is scientifically sculpted with a 57-degree natural handshake posture to alleviate forearm tension and carpal tunnel strain. Features an optical precision sensor adjustable from 800 to 4000 DPI, ultra-quiet acoustic silent-click switches (90% noise reduction), textured rubber thumb grip with forward/backward navigation keys, and dual connectivity via 2.4GHz USB nano-receiver or Bluetooth LE with up to 18 months of battery life on a single AA cell.",
+    "chunk_index": 0,
+    "snippet": "Ergonomic Vertical Wireless Mouse (PROD-103) Specifications\n\nThe Ergonomic Vertical Wireless Mouse (Model PROD-103) is scientifically sculpted with a ...",
+    "metadata": {
+      "title": "Ergonomic Vertical Wireless Mouse (PROD-103) Specifications",
+      "tags": [
+        "mouse",
+        "ergonomic",
+        "vertical",
+        "wrist",
+        "dpi",
+        "wireless",
+        "sensor"
+      ],
+      "category": "Product Specifications"
+    },
+    "hash": "accf0b2fa2864585"
+  },
+  {
+    "chunk_id": "PROD-SPEC-104",
+    "doc_id": "PROD-SPEC-104",
+    "title": "Ultra-Wide Curved Gaming Monitor 34\" (PROD-104) Specifications",
+    "category": "Product Specifications",
+    "filename": "Ultra-Wide_Curved_Gaming_Monitor_34\"_(PROD-104)_Specifications.txt",
+    "section_or_page": "Product Specifications",
+    "content": "Ultra-Wide Curved Gaming Monitor 34\" (PROD-104) Specifications\n\nThe Ultra-Wide Curved Gaming Monitor (Model PROD-104) features a 34-inch 21:9 panoramic VA panel with 1500R curvature matching the human eye field of view. Resolution: 3440 x 1440 WQHD with 144Hz high refresh rate and 1ms Moving Picture Response Time (MPRT). Supports AMD FreeSync Premium Pro, HDR400 with 99% sRGB color gamut coverage, dual HDMI 2.1, DisplayPort 1.4, and integrated dual 5W stereo speakers with T\u00dcV Rheinland certified low blue light and flicker-free eye care technology.",
+    "chunk_index": 0,
+    "snippet": "Ultra-Wide Curved Gaming Monitor 34\" (PROD-104) Specifications\n\nThe Ultra-Wide Curved Gaming Monitor (Model PROD-104) features a 34-inch 21:9 panorami...",
+    "metadata": {
+      "title": "Ultra-Wide Curved Gaming Monitor 34\" (PROD-104) Specifications",
+      "tags": [
+        "monitor",
+        "curved",
+        "ultrawide",
+        "144hz",
+        "1ms",
+        "wqhd",
+        "display",
+        "hdr"
+      ],
+      "category": "Product Specifications"
+    },
+    "hash": "720bdfa442dc96bd"
+  },
+  {
+    "chunk_id": "PROD-SPEC-105",
+    "doc_id": "PROD-SPEC-105",
+    "title": "Titan Pro Smartwatch (PROD-105) Specifications & Water Resistance",
+    "category": "Product Specifications",
+    "filename": "Titan_Pro_Smartwatch_(PROD-105)_Specifications_&_Water_Resistance.txt",
+    "section_or_page": "Product Specifications",
+    "content": "Titan Pro Smartwatch (PROD-105) Specifications & Water Resistance\n\nThe Titan Pro Smartwatch (Model PROD-105) boasts a 1.43-inch Always-On AMOLED display with 1000 nits peak brightness encased in titanium alloy. Equipped with advanced biometric sensors: continuous 24/7 heart rate, blood oxygen saturation (SpO2), stress monitoring, and scientific sleep stage analysis. Features dual-band 5-satellite GPS tracking and 100+ athletic sport modes. Water resistance is certified to 5ATM (50 meters depth ISO 22810), suitable for swimming. Battery lasts up to 14 days under typical use.",
+    "chunk_index": 0,
+    "snippet": "Titan Pro Smartwatch (PROD-105) Specifications & Water Resistance\n\nThe Titan Pro Smartwatch (Model PROD-105) boasts a 1.43-inch Always-On AMOLED displ...",
+    "metadata": {
+      "title": "Titan Pro Smartwatch (PROD-105) Specifications & Water Resistance",
+      "tags": [
+        "smartwatch",
+        "titan pro",
+        "battery",
+        "waterproof",
+        "sensors",
+        "health",
+        "5atm",
+        "gps"
+      ],
+      "category": "Product Specifications"
+    },
+    "hash": "653f29fc114a2182"
+  },
+  {
+    "chunk_id": "ADR-001",
+    "doc_id": "ADR-001",
+    "title": "ADR-001: Adoption of Microservices Architecture for Online Shopping",
+    "category": "Architecture & Engineering Governance",
+    "filename": "ADR-001:_Adoption_of_Microservices_Architecture_for_Online_Shopping.txt",
+    "section_or_page": "Architecture & Engineering Governance",
+    "content": "ADR-001: Adoption of Microservices Architecture for Online Shopping\n\nContext: The AeroStore e-commerce platform must scale to handle 10,000 concurrent shopping sessions with peak bursts during flash sales. Decision: Adopt a microservices architecture separating Product Catalog, Cart, Order Orchestration, and Payment Gateway into discrete domains. Consequences: Facilitates independent autoscaling, fault isolation (a spike in cart updates does not degrade catalog browsing), and contract-first REST boundaries with OpenAPI 3.0. Mitigates monolithic single-point-of-failure risks at the cost of distributed transaction orchestration.",
+    "chunk_index": 0,
+    "snippet": "ADR-001: Adoption of Microservices Architecture for Online Shopping\n\nContext: The AeroStore e-commerce platform must scale to handle 10,000 concurrent...",
+    "metadata": {
+      "title": "ADR-001: Adoption of Microservices Architecture for Online Shopping",
+      "tags": [
+        "adr",
+        "architecture",
+        "microservices",
+        "monolith",
+        "scale",
+        "concurrency",
+        "tradeoffs"
+      ],
+      "category": "Architecture & Engineering Governance"
+    },
+    "hash": "2570afabc1958e62"
+  },
+  {
+    "chunk_id": "ADR-002",
+    "doc_id": "ADR-002",
+    "title": "ADR-002: Strict Prohibition of AI/LLMs in Payment Settlement & Financial Invariants",
+    "category": "Architecture & Engineering Governance",
+    "filename": "ADR-002:_Strict_Prohibition_of_AI/LLMs_in_Payment_Settlement_&_Financial_Invariants.txt",
+    "section_or_page": "Architecture & Engineering Governance",
+    "content": "ADR-002: Strict Prohibition of AI/LLMs in Payment Settlement & Financial Invariants\n\nContext: Proposals were evaluated regarding using GenAI LLMs to negotiate dynamic discounts and automate payment settlement logic. Decision: AI/LLMs are strictly forbidden from participating in payment settlement, price calculation, or financial transaction authorization. Rationale: LLMs are non-deterministic and susceptible to prompt injection, hallucinated discount states, and parameter tampering. Payment settlement must execute exclusively through deterministic ACID code with RFC 7807 structured problem details, strict idempotency tokens, and a hard 1500ms SLA timeout with automated saga rollback.",
+    "chunk_index": 0,
+    "snippet": "ADR-002: Strict Prohibition of AI/LLMs in Payment Settlement & Financial Invariants\n\nContext: Proposals were evaluated regarding using GenAI LLMs to n...",
+    "metadata": {
+      "title": "ADR-002: Strict Prohibition of AI/LLMs in Payment Settlement & Financial Invariants",
+      "tags": [
+        "adr",
+        "ai safety",
+        "payment",
+        "settlement",
+        "deterministic",
+        "sla",
+        "security",
+        "financial"
+      ],
+      "category": "Architecture & Engineering Governance"
+    },
+    "hash": "01c0d35679a198e8"
+  },
+  {
+    "chunk_id": "TECH-OCC",
+    "doc_id": "TECH-OCC",
+    "title": "Optimistic Concurrency Control (OCC) & Cart Versioning Invariants",
+    "category": "Architecture & Engineering Governance",
+    "filename": "Optimistic_Concurrency_Control_(OCC)_&_Cart_Versioning_Invariants.txt",
+    "section_or_page": "Architecture & Engineering Governance",
+    "content": "Optimistic Concurrency Control (OCC) & Cart Versioning Invariants\n\nAeroStore utilizes Optimistic Concurrency Control (OCC) to guarantee cart consistency across multiple browser tabs and mobile sessions. Every cart state contains an integer `concurrency_version` token. Any mutation (add item, update quantity, remove item) must submit the `expected_version`. If a concurrent modification has updated the version in the interim, the server rejects the request with an RFC 7807 HTTP 409 Conflict status. This prevents lost update race conditions without requiring coarse-grained database locks.",
+    "chunk_index": 0,
+    "snippet": "Optimistic Concurrency Control (OCC) & Cart Versioning Invariants\n\nAeroStore utilizes Optimistic Concurrency Control (OCC) to guarantee cart consisten...",
+    "metadata": {
+      "title": "Optimistic Concurrency Control (OCC) & Cart Versioning Invariants",
+      "tags": [
+        "occ",
+        "concurrency",
+        "race condition",
+        "cart version",
+        "versioning",
+        "conflict"
+      ],
+      "category": "Architecture & Engineering Governance"
+    },
+    "hash": "2c19b8392795ced4"
+  },
+  {
+    "chunk_id": "PROMO-001",
+    "doc_id": "PROMO-001",
+    "title": "Promotional Coupons, Eligibility Rules & Stacking Policy",
+    "category": "Promotions & Discounts",
+    "filename": "Promotional_Coupons,_Eligibility_Rules_&_Stacking_Policy.txt",
+    "section_or_page": "Promotions & Discounts",
+    "content": "Promotional Coupons, Eligibility Rules & Stacking Policy\n\nAeroStore provides verified promotional coupon codes with automated validation rules: 1. `SAVE20`: Grants 20% discount on orders where cart subtotal is $50 or more. 2. `FLASH50`: Grants 50% discount on flash sales for orders exceeding $200. 3. Stacking Policy: Only one promotional coupon code can be applied per checkout session. 4. Edge Case Codes: Code `EXPIRED30` is permanently expired (testing HTTP 400 rejection), and `MINSPEND100` requires a minimum spend of $100.00. Maximum item quantity per cart line item is strictly capped at 99 units.",
+    "chunk_index": 0,
+    "snippet": "Promotional Coupons, Eligibility Rules & Stacking Policy\n\nAeroStore provides verified promotional coupon codes with automated validation rules: 1. `SA...",
+    "metadata": {
+      "title": "Promotional Coupons, Eligibility Rules & Stacking Policy",
+      "tags": [
+        "coupons",
+        "promo",
+        "save20",
+        "flash50",
+        "discount",
+        "eligibility",
+        "terms"
+      ],
+      "category": "Promotions & Discounts"
+    },
+    "hash": "1294a023e8cc0640"
+  },
+  {
+    "chunk_id": "doc-e5ad7af2-chk-0",
+    "doc_id": "doc-e5ad7af2",
+    "title": "vaibhavi varshneyRAG.docx",
+    "category": "Section: General",
+    "filename": "vaibhavi varshneyRAG.docx",
+    "section_or_page": "Section: General",
+    "content": "Steps Create a new\u00a0.Net\u00a0Web API project Create an Azure OpenAI resource, copy the endpoint and API key Go to Azure Foundry and deploy a model (model used here\u00a0-\u00a0gpt-5.4-mini) Create an Azure AI Search resource, copy the endpoint and admin key Configure credentials\u00a0in\u00a0appsettings.json Create the model layer for search document schema and API request/response models Create the service layer: DocumentParser\u00a0-\u00a0parses uploaded files (PDF, DOCX, TXT, JSON) SearchIndexService\u00a0-\u00a0manages the Azure AI Search index and document retrieval RagService\u00a0-\u00a0handles RAG pipeline (retrieve context \u2192 build prompt \u2192 call Azure OpenAI) Create controllers for document indexing and querying Register services in\u202fProgram.cs Run the application Dependencies used dotnet add package\u00a0Azure.AI.OpenAI dotnet add package\u00a0Azure.Search.Documents dotnet add package\u00a0DocumentFormat.OpenXml dotnet add package\u00a0UglyToad.PdfPig dotnet add package\u00a0Newtonsoft.Json dotnet add package\u00a0Swashbuckle.AspNetCore How It Works Documents (PDF, DOCX, TXT, JSON) are uploaded via\u202fPOST/api/documents/index DocumentParser\u00a0extracts text,\u202fSearchIndexService\u00a0indexes it into Azure AI Search On query (POST /api/rag/query),\u202fSearchIndexService\u00a0retrieves the top relevant chunks using semantic search (falls back to\u00a0full-text\u00a0\u2192 wildcard) Retrieved chunks are injected as context into a prompt sent to\u202fgpt-5.4-mini The grounded answer along with source references is returned Results Document indexing via Swagger RAG query returning answer + sources Semantic search with automatic fallback to simple and wildcard search Results",
+    "chunk_index": 0,
+    "snippet": "Steps Create a new\u00a0.Net\u00a0Web API project Create an Azure OpenAI resource, copy the endpoint and API key Go to Azure Foundry and deploy a model (model u...",
+    "metadata": {},
+    "hash": "4af54269a2ca40a0"
+  }
+]

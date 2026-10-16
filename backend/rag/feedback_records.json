@@ -1,0 +1,20 @@
+[
+  {
+    "feedback_id": "fb-1791366043376",
+    "message_id": "chat-msg-2-1791366043329",
+    "rating": "thumbs_up",
+    "query": "",
+    "response_snippet": "I am the dedicated AI concierge for AeroStore. I can only assist with questions regarding our store products, orders, shipping, warranty and return policies, and platform features. How can I help you ",
+    "feedback_text": "",
+    "timestamp": 1791366043.3760085
+  },
+  {
+    "feedback_id": "fb-1791366044852",
+    "message_id": "chat-msg-2-1791366044844",
+    "rating": "thumbs_down",
+    "query": "",
+    "response_snippet": "I am the dedicated AI concierge for AeroStore. I can only assist with questions regarding our store products, orders, shipping, warranty and return policies, and platform features. How can I help you ",
+    "feedback_text": "",
+    "timestamp": 1791366044.8528645
+  }
+]

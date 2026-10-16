@@ -1,0 +1,276 @@
+"""
+USE CASE 2: OpenAPI 3.0 Contract-First Spec Generator
+Generates full OpenAPI 3.0 YAML contract conforming to RFC 7807 structured error model.
+"""
+
+OPENAPI_SPEC_YAML = """openapi: 3.0.3
+info:
+  title: Online Shopping System - Product & Cart APIs
+  description: Contract-First REST API specification for Product Catalog and Shopping Cart services.
+  version: 1.0.0
+servers:
+  - url: http://127.0.0.1:8000/api/v1
+    description: Local development environment
+
+paths:
+  /products:
+    get:
+      summary: List all products
+      description: Retrieve a paginated list of catalog products with optional category and keyword filters.
+      parameters:
+        - name: category
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: search
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A list of products
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Product'
+        '500':
+          $ref: '#/components/responses/InternalError'
+    post:
+      summary: Add a new product
+      description: Create a new product entry in the catalog (Admin action).
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Product'
+      responses:
+        '201':
+          description: Product successfully created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+        '422':
+          $ref: '#/components/responses/ValidationError'
+
+  /products/{id}:
+    get:
+      summary: Get product details
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Product details retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+  /cart:
+    get:
+      summary: Get current shopping cart
+      parameters:
+        - name: cart_id
+          in: query
+          required: false
+          schema:
+            type: string
+            default: default_cart
+      responses:
+        '200':
+          description: Current cart details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Cart'
+
+  /cart/items:
+    post:
+      summary: Add item to shopping cart
+      description: Adds item or increments quantity. Enforces OCC version and stock limits.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AddToCartRequest'
+      responses:
+        '200':
+          description: Updated cart details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Cart'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+        '409':
+          $ref: '#/components/responses/ConflictError'
+        '422':
+          $ref: '#/components/responses/ValidationError'
+
+components:
+  schemas:
+    Product:
+      type: object
+      required:
+        - id
+        - name
+        - price
+        - stock
+        - category
+      properties:
+        id:
+          type: string
+          example: PROD-101
+        name:
+          type: string
+          example: HyperSound ANC Wireless Headphones
+        description:
+          type: string
+          example: Studio-grade active noise cancellation.
+        price:
+          type: number
+          format: float
+          example: 199.99
+        stock:
+          type: integer
+          example: 15
+        category:
+          type: string
+          example: Electronics
+        rating:
+          type: number
+          format: float
+          example: 4.9
+
+    AddToCartRequest:
+      type: object
+      required:
+        - product_id
+        - quantity
+      properties:
+        cart_id:
+          type: string
+          default: default_cart
+        product_id:
+          type: string
+          example: PROD-101
+        quantity:
+          type: integer
+          minimum: 1
+          maximum: 99
+          example: 1
+        expected_version:
+          type: integer
+          nullable: true
+          example: 1
+
+    CartItem:
+      type: object
+      properties:
+        product_id:
+          type: string
+        name:
+          type: string
+        unit_price:
+          type: number
+        quantity:
+          type: integer
+        subtotal:
+          type: number
+
+    Cart:
+      type: object
+      properties:
+        id:
+          type: string
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/CartItem'
+        subtotal:
+          type: number
+        discount_amount:
+          type: number
+        applied_coupon:
+          type: string
+          nullable: true
+        tax_amount:
+          type: number
+        total_amount:
+          type: number
+        concurrency_version:
+          type: integer
+
+    ProblemDetails:
+      type: object
+      required:
+        - type
+        - title
+        - status
+        - detail
+        - error_code
+      properties:
+        type:
+          type: string
+          example: "about:blank"
+        title:
+          type: string
+          example: "Optimistic Concurrency Conflict"
+        status:
+          type: integer
+          example: 409
+        detail:
+          type: string
+          example: "Cart was modified by another session."
+        error_code:
+          type: string
+          example: "CONCURRENT_MODIFICATION"
+        invalid_params:
+          type: object
+          nullable: true
+
+  responses:
+    NotFoundError:
+      description: Resource not found
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+    ConflictError:
+      description: Conflict (e.g. Out of stock or OCC version clash)
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+    ValidationError:
+      description: Invalid request parameters
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+    InternalError:
+      description: Server unexpected error
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+"""
+
+class OpenApiGenerator:
+    @staticmethod
+    def get_spec_yaml() -> str:
+        return OPENAPI_SPEC_YAML
+
+openapi_generator = OpenApiGenerator()

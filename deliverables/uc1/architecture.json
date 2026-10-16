@@ -1,0 +1,67 @@
+{
+  "system_name": "NextGen Retail Online Shopping Platform",
+  "architecture_style": "Microservices Architecture (Contract-First)",
+  "concurrent_users": 10000,
+  "services": [
+    {
+      "name": "Product Catalog Service",
+      "responsibility": "Manages product metadata, inventory counts, categories, and full-text search indexing.",
+      "api_boundary": "/api/v1/products",
+      "database": "Document DB (MongoDB / PostgreSQL JSONB) with Redis read cache for high-throughput reads.",
+      "risks": [
+        "Cache staleness during flash sales",
+        "Read replica replication lag"
+      ]
+    },
+    {
+      "name": "Shopping Cart Service",
+      "responsibility": "Stateful ephemeral cart management, coupon application, and Optimistic Concurrency Control (OCC).",
+      "api_boundary": "/api/v1/cart",
+      "database": "In-memory distributed key-value store (Redis / DynamoDB) with TTL expiration.",
+      "risks": [
+        "Abandoned cart memory bloat",
+        "Multi-device concurrent modification race conditions"
+      ]
+    },
+    {
+      "name": "Order Management Service",
+      "responsibility": "Checkout orchestration, state machine transitions (Pending -> Confirmed -> Shipped), and order history.",
+      "api_boundary": "/api/v1/orders",
+      "database": "Relational ACID database (PostgreSQL) enforcing transactional integrity.",
+      "risks": [
+        "Distributed transactions across microservices",
+        "Partial saga failure during payment timeouts"
+      ]
+    },
+    {
+      "name": "Payment Processing Service",
+      "responsibility": "Payment gateway integration (Stripe/PayPal), SLA timeout enforcement (1500ms), idempotency deduplication, and saga compensation.",
+      "api_boundary": "/api/v1/payments",
+      "database": "PostgreSQL with strict append-only financial audit ledger.",
+      "risks": [
+        "Upstream gateway latency spikes",
+        "Duplicate payment replay attacks",
+        "Network partitions during capture"
+      ]
+    },
+    {
+      "name": "User & Identity Service",
+      "responsibility": "Authentication, authorization, OAuth2/OIDC token issuance, and customer profile management.",
+      "api_boundary": "/api/v1/users",
+      "database": "PostgreSQL / OpenID Connect Provider.",
+      "risks": [
+        "Token revocation latency",
+        "Credential stuffing attacks"
+      ]
+    }
+  ],
+  "token_usage_estimated": {
+    "prompt_tokens": 142,
+    "completion_tokens": 680,
+    "total_tokens": 822
+  },
+  "trade_off_analysis": {
+    "why_microservices": "Enables independent scaling of Catalog (read-heavy, 10k users) vs Payment/Order (write-heavy ACID). Prevents cart crashes from taking down payment settlement.",
+    "database_strategy": "Database-per-service pattern prevents tight coupling, ensuring resilience against cascading outages."
+  }
+}
